@@ -14,8 +14,8 @@ router.get("/addProducts",(req,res,next) => {
 })
 
 router.post("/addProducts",(req,res,next) => {
-    console.log(req.body)
-    res.redirect("/user")
+    console.log("Product Name : ",req.body.product)
+    res.redirect("/product")
 })
 
-exports.module = router
+module.exports=router

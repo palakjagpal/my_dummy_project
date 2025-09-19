@@ -13,8 +13,8 @@ app.use(bodyParser.urlencoded({extended : false}))
 
 app.use(express.static((path.join(__dirname, "public"))))
 
-app.use("/admin",productRoutes)
-app.use("/customer",userRoutes)
+app.use("/product",productRoutes)
+app.use("/user",userRoutes)
 
 app.get("/",(req,res,next) => {
     res.sendFile(path.join(__dirname,"views","index.html"))
@@ -25,5 +25,5 @@ app.use("/",(req,res,next) => {
 })
 
 app.listen(PORT || 5000,() => {
-    console.log(`Server started at http://localhost:{PORT}`)
+    console.log(`Server is running on http://localhost:${PORT}`);
 })
