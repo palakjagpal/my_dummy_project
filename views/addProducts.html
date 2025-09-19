@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Products</title>
+    <link rel="styesheet" href="/public/style.css">
+</head>
+<body>
+    <header>
+      <h1>mywebsite.com</h1>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/products">Products</a>
+        <a href="/products/addProducts">Add Products</a>
+        <a href="users/addUsers">Users</a>
+      </nav>
+    </header>
+
+    <form action="/products/addProduct" method="POST">
+      <input type="text" name="producttitle" placeholder="Product Name" required />
+      <button type="submit">Add Course</button>
+
+</body>
+</html>
